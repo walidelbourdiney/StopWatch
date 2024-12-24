@@ -1,67 +1,58 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 body {
-  font-family: "Montserrat", "Poppins", sans-serif;
-
-  line-height: 1.5;
-  color: black;
-  background-color: #ffffff;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: bolder;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 10px 20px;
-
-  margin-bottom: 10px;
-  border-radius: 10px;
-}
-.flex {
   display: flex;
-  /* justify-content: center; */
+  flex-direction: column;
   align-items: center;
+  background-color: hsl(0, 0%, 90%);
 }
-.grid {
-  display: grid;
-  gap: 1rem;
+#myH1 {
+  font-size: 4rem;
+  font-family: "Arial", sans-serif;
+  color: hsl(0, 0%, 25%);
 }
-a {
-  text-decoration: none;
-  color: black;
-}
-a:hover {
-  color: var(--primary-color);
-  text-decoration: underline;
-}
-button {
-  color: #f9f9f9;
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  background-color: black;
-}
-button:hover {
-  background-color: var(--primary-color);
-  color: black;
-}
-ul {
+#container {
   display: flex;
-  flex-direction: row;
-  list-style: none;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  border: 5px solid;
+  border-radius: 50px;
+  background-color: white;
 }
-img {
-  max-width: 100%;
-  height: auto;
+#display {
+  font-size: 5rem;
+  font-family: monospace;
+  font-weight: bold;
+  color: hsl(0, 0%, 30%);
+  text-shadow: 2px 2px 2px hsla(0, 0%, 0%, 0.75);
+  margin-bottom: 25px;
+}
+#controls button {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin: 5px;
+  min-width: 125px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.5s ease;
+}
+#startBtn {
+  background-color: hsl(115, 100%, 40%);
+}
+#startBtn:hover {
+  background-color: hsl(115, 100%, 30%);
+}
+#stopBtn {
+  background-color: hsl(10, 90%, 50%);
+}
+#stopBtn:hover {
+  background-color: hsl(10, 90%, 40%);
+}
+#resetBtn {
+  background-color: hsl(205, 90%, 60%);
+}
+#resetBtn:hover {
+  background-color: hsl(205, 90%, 50%);
 }
